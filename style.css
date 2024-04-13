@@ -1,0 +1,211 @@
+.form {
+    background-color: #1e1e1e;
+    max-width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+.form__title {
+    color: aliceblue;
+}
+
+.form__login {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.form__login-label {
+    color: aliceblue;
+    font-size: 20px;
+    position: relative;
+}
+
+.form__login-input {
+    background-color: #3e3e3e;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.userName.warning {
+    background-color: #ff0000;
+}
+
+.password.warning {
+    background-color: #ff0000;
+}
+
+.email.warning {
+    background-color: #ff0000;
+}
+
+.phoneNumber.warning {
+    background-color: #ff0000;
+}
+
+.form__button {
+    margin-top: 20px;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.image {
+    width: 400px;
+}
+
+.form__first {
+    transform: translateX(-450px) translateY(-200px);
+    transition: 1s;
+}
+
+.form__second {
+    transform: translateY(-1250px) translateX(800px);
+    transition: 1s;
+}
+
+.form__third {
+    transform: scale(0.01);
+    opacity: 0;
+    transform: translateX(-150px);
+    transition: 1s;
+}
+
+.form__fourth {
+    transform: translateX(-1150px) translateY(-700px) scale(0.01);
+    opacity: 0;
+    transition: 1s;
+}
+
+.form__first.chnage-one {
+    transform: translateX(250px) translateY(-200px);
+}
+
+.form__second.chnage-two {
+    transform: translateY(-400px) translateX(800px);
+}
+
+.form__third.chnage-three {
+    transform: scale(1);
+    opacity: 1;
+    transform: translateX(-100px) translateY(-100px);
+    rotate: 360deg;
+}
+
+.form__fourth.chnage-four {
+    transform: translateX(-1150px) translateY(-700px) scale(1);
+    opacity: 1;
+    rotate: 360deg;
+}
+
+.form-label__warning1,
+.form-label__warning2,
+.form-label__warning3,
+.form-label__warning4 {
+    color: #1e1e1e;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    z-index: -1;
+    transition: 0.5s;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form-label__warning1.chnage-modal-1 {
+    right: -300px;
+}
+
+.form-label__warning2.chnage-modal-2 {
+    right: -300px;
+}
+
+.form-label__warning3.chnage-modal-3 {
+    right: -300px;
+}
+
+.form-label__warning4.chnage-modal-4 {
+    right: -300px;
+}
+
+.form-button__congratulation {
+    position: absolute;
+    top: -10px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    z-index: -1;
+    right: 50px;
+    transition: 0.5s;
+}
+
+.form-button__congratulation.chnage-modal-5 {
+    top: 100px;
+    right: 50px;
+}
+
+/* ----- Index(1) ----- */
+
+.title {
+    text-align: center;
+    margin: 70px auto;
+    font-size: 50px;
+}
+
+.block {
+    border: 1px solid #000;
+    width: 1000px;
+    margin: 0px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block__item {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.block__item-label {}
+
+.block__item-input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.block__card {
+    width: 60%;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block__card-text {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    color: #fff;
+}
+
+.block__item-button {
+    width: 100px;
+    padding: 10px 15px;
+}
