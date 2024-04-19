@@ -157,55 +157,185 @@
     right: 50px;
 }
 
-/* ----- Index(1) ----- */
-
-.title {
-    text-align: center;
-    margin: 70px auto;
-    font-size: 50px;
-}
+/* ----- Credit Card ----- */
 
 .block {
-    border: 1px solid #000;
-    width: 1000px;
-    margin: 0px auto;
-    padding: 20px;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
 }
 
-.block__item {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
+.block__item:nth-child(1) {
+    position: absolute;
+    width: 60vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #202020, gray);
 }
 
-.block__item-label {}
-
-.block__item-input {
-    margin-top: 10px;
-    margin-bottom: 20px;
+.block__item:nth-child(2) {
+    position: absolute;
+    right: 0;
+    width: 30vw;
+    height: 0vh;
+    border-top: 55vw solid rgb(242, 53, 53);
+    border-left: 20vw solid transparent;
+    border-right: 0vw solid transparent;
 }
 
-.block__card {
-    width: 60%;
-    background-color: #000;
-    border-radius: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.block__item:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 37.4vw solid rgb(255, 72, 72);
+    border-right: 15vw solid transparent;
+    border-left: 10vw solid transparent;
+    right: 30%;
 }
 
-.block__card-text {
-    border: 1px solid #fff;
-    border-radius: 5px;
+.block__item:nth-child(4) {
+    position: absolute;
+    width: 60vw;
     padding: 10px;
-    width: 200px;
-    color: #fff;
+    top: 25%;
+    left: 10%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.block__item-button {
+.block__item-creation {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    padding: 10px;
+}
+
+.block__creation-label {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+    width: 700;
+}
+
+.block__creation-input {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    width: 700;
+    color: #202020;
+}
+
+.block__item-card {
+    width: 30vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px #1e1e1e;
+    overflow: hidden;
+}
+
+.block__card-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card__top-left {}
+
+.card__top-title {
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+    width: 700;
+}
+
+.card__top-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    transform: translateX(-10px) translateY(-10px);
+}
+
+.card__top-chip {
+    width: 70px;
+}
+
+.card__top-symbol {
+    width: 70px;
+}
+
+.card__top-right {
+    padding: 20px 0 0 0;
+}
+
+.card__top-logo {
     width: 100px;
-    padding: 10px 15px;
+}
+
+.block__card-down {
+    padding: 0 20px 10px 20px;
+}
+
+.card__down-number {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+    width: 700;
+}
+
+.card__down-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.card__down-label {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Work Sans';
+    width: 600;
+}
+
+.card__down-date {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Space Mono', monospace;
+    width: 700;
+}
+
+.card__down-name {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Space Mono', monospace;
+    width: 700;
+}
+
+.block__creation-button {
+    border: none;
+    border-radius: 10px;
+    padding: 14px 10px;
+    background-color: #202020;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0px 10px 10px rgba(255, 72, 72, 0.537);
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Space Mono', monospace;
+    width: 700;
+}
+
+.block__creation-button:hover {
+    box-shadow: 0px 10px 10px rgba(232, 103, 103, 0.537);
+    background-color: #fff;
+    color: #202020;
+}
+
+.block__creation-button:active {
+    background-color: #a8a8a8;
 }

@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LaLaLaLaLa</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Cormorant+Garamond&family=DM+Sans:ital,opsz,wght@0,9..40,700;1,9..40,700&family=Dela+Gothic+One&family=EB+Garamond&family=IM+Fell+DW+Pica+SC&family=Inter&family=Kaushan+Script&family=Mate+SC&family=Montserrat:wght@400;600&family=Noto+Sans+Display:wght@800&family=Open+Sans:ital,wght@0,600;1,500&family=Pacifico&family=Playfair+Display&family=Poppins&family=Preahvihear&family=Roboto:ital,wght@0,400;0,500;1,900&family=Ubuntu&family=Work+Sans:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Cormorant+Garamond&family=DM+Sans:ital,opsz,wght@0,9..40,700;1,9..40,700&family=Dela+Gothic+One&family=EB+Garamond&family=IM+Fell+DW+Pica+SC&family=Inter&family=Kaushan+Script&family=Mate+SC&family=Montserrat:wght@400;600&family=Noto+Sans+Display:wght@800&family=Open+Sans:ital,wght@0,600;1,500&family=Pacifico&family=Playfair+Display&family=Poppins&family=Preahvihear&family=Roboto:ital,wght@0,400;0,500;1,900&family=Space+Mono:wght@700&family=Ubuntu&family=Work+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <h1 class="title">It is our original website</h1>
 
+<body>
     <div class="block">
+        <div class="block__item"></div>
+        <div class="block__item"></div>
+        <div class="block__item"></div>
         <div class="block__item">
-            <label for="" class="block__item-label">Name of the card</label>
-            <input type="text" class="block__item-input cardName">
-            <label for="" class="block__item-label">Your name and surname</label>
-            <input type="text" class="block__item-input costumerName">
-            <label for="" class="block__item-label">IBAN</label>
-            <input type="text" class="block__item-input iBAN">
-            <label for="" class="block__item-label">BLZ</label>
-            <input type="text" class="block__item-input bLZ">
-            <label for="" class="block__item-label">Konto-Nr.</label>
-            <input type="text" class="block__item-input kontoNr">
-            <label for="" class="block__item-label">Gültig bis</label>
-            <input type="text" class="block__item-input date">
-        </div>
-        <div class="block__card">
-            <p class="block__card-text textCard"></p>
-            <p class="block__card-text  textName"></p>
-            <p class="block__card-text textIban"></p>
-            <p class="block__card-text textBlz"></p>
-            <p class="block__card-text textNr"></p>
-            <p class="block__card-text textDate"></p>
+            <div class="block__item-creation">
+                <label for="" class="block__creation-label">Card Number</label>
+                <input type="text" class="block__creation-input  cardNumber" placeholder="0000 0000 0000 0000">
+                <label for="" class="block__creation-label">Customer Name</label>
+                <input type="text" class="block__creation-input customerName" placeholder="Name Surname">
+                <label for="" class="block__creation-label">Exp. End:</label>
+                <input type="text" class="block__creation-input expEnd" placeholder="12/12">
+                <button class="block__creation-button buttonCardNumber">Get your Card Number</button>
+            </div>
+            <div class="block__item-card">
+                <div class="block__card-top">
+                    <div class="card__top-left">
+                        <h3 class="card__top-title">INVESTOR</h3>
+                        <div class="card__top-images">
+                            <img src="./Picture/credit-chip.png" alt="" class="card__top-chip">
+                            <img src="./Picture/contactless-symbol.png" alt="" class="card__top-symbol">
+                        </div>
+                    </div>
+                    <div class="card__top-right">
+                        <img src="./Picture/mastercard-logo.png" alt="" class="card__top-logo">
+                    </div>
+                </div>
+                <div class="block__card-down">
+                    <p class="card__down-number textCardNumber"></p>
+                    <div class="card__down-block">
+                        <label for="" class="card__down-label">Exp. End:</label>
+                        <p class="card__down-date textExpEnd"></p>
+                    </div>
+                    <p class="card__down-name textCustomerName"></p>
+                </div>
+            </div>
         </div>
     </div>
 
     <script src="./creditCard.js"></script>
 </body>
+
 </html>
