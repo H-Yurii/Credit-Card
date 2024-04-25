@@ -104,18 +104,6 @@ body {
 .header__nav-logo:hover {
     color: #d0d0d0;
 }
-
-.header__nav-logo::after {
-    position: absolute;
-    content: '';
-    top: 50%;
-    left: -5%;
-    background-color: #000000;
-    width: 110%;
-    height: 4px;
-    transition: 0.5s;
-}
-
 .header__nav-list {
     display: flex;
     justify-content: space-between;
