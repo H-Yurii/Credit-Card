@@ -558,7 +558,17 @@ body {
     }
 }
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    .main__account-triangle {
+        bottom: 15%;
+        width: 300px;
+    }
+
+    .main__crypto-triangle {
+        bottom: 15%;
+        width: 300px;
+    }
+}
 
 @media (max-width: 650px) {
     .header__button-menu {
@@ -665,5 +675,23 @@ body {
     .header__menu-block.change {
         top: 7%;
         right: 5%;
+    }
+
+    .main__crypto-triangle {
+        left: 0%;
+        top: 40%;
+        width: 250px;
+    }
+
+    .main__money-triangle {
+        left: 0%;
+        width: 280px;
+        width: 250px;
+    }
+
+    .main__account-triangle {
+        left: 0%;
+        top: 40%;
+        width: 250px;
     }
 }

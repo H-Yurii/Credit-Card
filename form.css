@@ -436,8 +436,7 @@ body {
     color: #1e1e1e;
 }
 
-@media (max-width: 1300px) {
-}
+@media (max-width: 1300px) {}
 
 @media (max-width: 1199px) {
     .header__nav {
@@ -482,7 +481,15 @@ body {
 }
 
 @media (max-width: 767px) {
-    
+    .main__account-triangle {
+        bottom: 15%;
+        width: 300px;
+    }
+
+    .main__crypto-triangle {
+        bottom: 15%;
+        width: 300px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -590,5 +597,23 @@ body {
     .header__menu-block.change {
         top: 7%;
         right: 5%;
+    }
+
+    .main__crypto-triangle {
+        left: 0%;
+        top: 40%;
+        width: 250px;
+    }
+
+    .main__money-triangle {
+        left: 0%;
+        width: 280px;
+        width: 250px;
+    }
+
+    .main__account-triangle {
+        left: 0%;
+        top: 40%;
+        width: 250px;
     }
 }
