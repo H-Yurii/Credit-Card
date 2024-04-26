@@ -72,14 +72,9 @@ h6 {
     font-weight: 400;
 }
 
-body {
-    height: 100vh;
-}
-
 .header {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
 }
 
 .header__nav {
@@ -104,10 +99,18 @@ body {
     color: #565656;
 }
 
+.header__button-menu {
+    display: none;
+}
+
 .header__nav-list {
     display: flex;
     justify-content: space-between;
     width: 600px;
+}
+
+.header__menu-block {
+    display: none;
 }
 
 .nav__list-item {
@@ -137,7 +140,8 @@ body {
 }
 
 .header__main {
-    height: 95%;
+    max-width: 100%;
+    height: 100%;
     background-image: url(./Picture/numberless-card.png);
     background-size: cover;
     box-shadow: inset 0px -300px 500px #1e1e1e;
@@ -145,7 +149,7 @@ body {
 }
 
 .header__main-block {
-    bottom: 50px;
+    bottom: 100px;
     padding: 30px;
     max-width: 1000px;
     position: absolute;
@@ -187,51 +191,6 @@ body {
     padding: 20px;
 }
 
-.main__block-svg:nth-child(1) {
-    position: absolute;
-    z-index: -1;
-    left: 0;
-}
-
-.main__block-svg:nth-child(2) {
-    position: absolute;
-    z-index: -1;
-    left: 8%;
-}
-
-.main__block-svg:nth-child(3) {
-    position: absolute;
-    z-index: -1;
-    left: 4%;
-    top: 22%;
-}
-
-.main__block-svg:nth-child(4) {
-    position: absolute;
-    z-index: -1;
-    left: 4%;
-    bottom: 22%;
-}
-
-.main__block-svg:nth-child(5) {
-    position: absolute;
-    z-index: -1;
-    left: 12%;
-    bottom: 22%;
-}
-
-.main__block-svg:nth-child(6) {
-    position: absolute;
-    z-index: -1;
-    left: 12%;
-    top: 22%;
-}
-
-.main__block-svg:nth-child(7) {
-    position: absolute;
-    z-index: -1;
-    left: 16%;
-}
 
 .main__body-account {
     max-width: 1300px;
@@ -244,9 +203,16 @@ body {
     z-index: 3;
 }
 
+.main__account-triangle {
+    position: absolute;
+    z-index: -1;
+    left: 10%;
+}
+
 .main__account-info {
-    width: 40%;
     padding: 20px;
+    max-width: 500px;
+    margin-right: 20px;
 }
 
 .main__account-title {
@@ -257,7 +223,7 @@ body {
 
 .main__account-text {
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Work Sans', sans-serif;
     margin-top: 20px;
     line-height: 35px;
@@ -271,7 +237,7 @@ body {
 
 .main__image-svg {
     position: absolute;
-    right: -2%;
+    right: 0%;
     z-index: -1;
     bottom: 2%;
 }
@@ -293,48 +259,14 @@ body {
     z-index: 3;
 }
 
-.main__money-svg:nth-child(1) {
+.main__money-triangle {
     position: absolute;
-    z-index: -1;
-    right: 30%;
-}
-
-.main__money-svg:nth-child(2) {
-    position: absolute;
-    right: 22%;
-    z-index: -1;
-}
-
-.main__money-svg:nth-child(3) {
-    position: absolute;
-    right: 26%;
-    top: 18%;
-    z-index: -1;
-}
-
-.main__money-svg:nth-child(4) {
-    position: absolute;
-    right: 34%;
-    bottom: 18%;
-    z-index: -1;
-}
-
-.main__money-svg:nth-child(5) {
-    position: absolute;
-    right: 26%;
-    bottom: 18%;
-    z-index: -1;
-}
-
-.main__money-svg:nth-child(6) {
-    position: absolute;
-    right: 18%;
-    bottom: 18%;
     z-index: -1;
 }
 
 .main__money-info {
-    width: 45%;
+    max-width: 500px;
+    margin-left: 20px;
     padding: 20px;
 }
 
@@ -382,50 +314,16 @@ body {
     z-index: 3;
 }
 
-.main__crypto-svg:nth-child(1) {
+.main__crypto-triangle {
     position: absolute;
     z-index: -1;
-    top: 30%;
-}
-
-.main__crypto-svg:nth-child(2) {
-    position: absolute;
-    z-index: -1;
-    top: 30%;
-    left: 20%;
-}
-
-.main__crypto-svg:nth-child(3) {
-    position: absolute;
-    z-index: -1;
-    top: 30%;
-    left: 28%;
-}
-
-.main__crypto-svg:nth-child(4) {
-    position: absolute;
-    z-index: -1;
-    left: 24%;
-    top: 48%;
-}
-
-.main__crypto-svg:nth-child(5) {
-    position: absolute;
-    z-index: -1;
-    left: 16%;
-    top: 48%;
-}
-
-.main__crypto-svg:nth-child(6) {
-    position: absolute;
-    z-index: -1;
-    bottom: 14%;
-    left: 20%;
+    left: 10%;
 }
 
 .main__crypto-info {
-    width: 45%;
     padding: 20px;
+    max-width: 500px;
+    margin-right: 20px;
 }
 
 .main__crypto-title {
@@ -443,7 +341,7 @@ body {
 }
 
 .main__crypto-image {
-    width: 45%;
+    width: 50%;
     border-radius: 10px;
     position: relative;
     z-index: 3;
@@ -453,7 +351,7 @@ body {
     position: absolute;
     z-index: -1;
     bottom: 5%;
-    right: -2%;
+    right: 0%;
 }
 
 .footer {
@@ -463,9 +361,10 @@ body {
 .footer__body {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 50px 20px 40px 50px;
+    padding: 50px 20px 70px 20px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer__body-logo {
@@ -483,6 +382,13 @@ body {
 
 .footer__body-item {
     max-width: 300px;
+}
+
+.footer__body-block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    gap: 60px;
 }
 
 .footer__item-title {
@@ -506,4 +412,405 @@ body {
 
 .footer__nav-link:hover {
     color: #1e1e1e;
+}
+
+@media (max-width: 1300px) {
+    .main__body-account {
+        padding: 10px 10px 10px 100px;
+    }
+
+    .main__body-money {
+        padding: 10px 100px 10px 10px;
+    }
+
+    .main__body-crypto {
+        padding: 10px 10px 10px 100px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .header__nav {
+        padding: 10px 20px;
+    }
+
+    .header__main-title {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 1118px) {
+    .footer__body-block {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header__nav {
+        flex-direction: column;
+    }
+
+    .header__nav-list {
+        margin-top: 20px;
+    }
+
+    .nav__list-item {
+        font-size: 20px;
+    }
+
+    .header__nav-link {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .header__main-block {
+        bottom: 200px;
+        max-width: 700px;
+    }
+
+    .header__main-title {
+        font-size: 38px;
+    }
+
+    .main__body-account {
+        padding: 20px;
+    }
+
+    .main__body-money {
+        padding: 20px;
+    }
+
+    .main__body-crypto {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer__body {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main__body-account {
+        flex-direction: column-reverse;
+        max-width: 600px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .main__account-info {
+        margin: 0;
+    }
+
+    .main__account-image {
+        width: 460px;
+    }
+
+    .main__image-svg {
+        display: none;
+    }
+
+    .main__account-triangle {
+        bottom: 15%;
+    }
+
+    .main__body-money {
+        flex-direction: column-reverse;
+        max-width: 600px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .main__money-info {
+        margin: 0;
+    }
+
+    .main__money-image {
+        width: 460px;
+    }
+
+    .main__my-svg {
+        display: none;
+    }
+
+    .main__money-triangle {
+        bottom: 10%;
+    }
+    
+    .main__body-crypto {
+        flex-direction: column-reverse;
+        max-width: 600px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .main__crypto-info {
+        margin: 0;
+    }
+
+    .main__crypto-image {
+        width: 460px;
+    }
+
+    .main__cr-svg {
+        display: none;
+    }
+
+    .main__crypto-triangle {
+        bottom: 15%;
+    }
+}
+
+@media (max-width: 650px) {
+    .header__button-menu {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .header__button-menu.active {
+        transform: rotate(-40deg);
+    }
+
+    .header__button-menu:hover .header__menu-span {
+        color: #fff;
+    }
+
+    .header__menu-span {
+        position: absolute;
+        color: #fa6d6d;
+        left: 29%;
+        top: 22%;
+        font-size: 25px;
+    }
+
+    .header__nav-list {
+        display: none;
+    }
+
+    .header__nav-link {
+        display: none;
+    }
+
+    .header__block-link {
+        font-family: 'Space Mono', monospace;
+        width: 700;
+        background-color: #fff;
+        padding: 12px 10px;
+        border-radius: 10px;
+        color: #1e1e1e;
+        transition: 0.5s;
+        position: relative;
+    }
+
+    .header__block-link:hover {
+        background-color: #1e1e1e;
+        color: #fff;
+    }
+
+    .header__menu-block {
+        position: absolute;
+        display: block;
+        padding: 50px 20px 50px 20px;
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        z-index: 3;
+        top: -50%;
+        right: 10%;
+        transition: 0.5s;
+    }
+
+    .header__menu-block.change {
+        top: 7%;
+        right: 10%
+    }
+
+    .nav__list-item {
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    .nav__list-item:nth-child(4) {
+        margin-bottom: 30px;
+        color: #fff;
+    }
+
+    .header__nav {
+        flex-direction: row;
+    }
+
+    .header__main-block {
+        bottom: 100px;
+    }
+
+    .header__main-title {
+        font-size: 32px;
+    }
+
+    .header__main-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    .header__main-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .main__account-image {
+        width: 350px;
+    }
+
+    .main__account-title {
+        font-size: 28px;
+    }
+
+    .main__account-bg {
+        padding: 10px;
+    }
+
+    .main__account-info {
+        padding: 10px;
+    }
+
+    .main__money-image {
+        width: 350px;
+    }
+
+    .main__money-title {
+        font-size: 28px;
+    }
+
+    .main__money-bg {
+        padding: 10px;
+    }
+
+    .main__money-info {
+        padding: 10px;
+    }
+
+    .main__crypto-image {
+        width: 350px;
+    }
+
+    .main__crypto-title {
+        font-size: 28px;
+    }
+
+    .main__crypto-bg {
+        padding: 10px;
+    }
+
+    .main__crypto-info {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 390px) {
+    .main__account-triangle {
+        left: -2%;
+    }
+
+    .main__crypto-triangle {
+        left: -2%;
+    }
+}
+
+@media (max-width: 370px) {
+    .main__account-image {
+        width: 260px;
+    }
+
+    .main__money-image {
+        width: 260px;
+    }
+
+    .main__crypto-image {
+        width: 260px;
+    }
+}
+
+@media (max-width: 350px) {
+    .header__nav-logo {
+        font-size: 20px;
+    }
+
+    .header__menu-block {
+        position: absolute;
+        display: block;
+        padding: 50px 20px 50px 20px;
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        z-index: 3;
+        top: -50%;
+        right: 5%;
+        transition: 0.5s;
+    }
+
+    .header__menu-block.change {
+        top: 7%;
+        right: 5%;
+    }
+
+    .main__account-text {
+        font-size: 20px;
+    }
+
+    .main__account-triangle {
+        left: -5%;
+        top: 40%;
+        width: 300px;
+    }
+
+    .main__account-info {
+        padding: 0;
+    }
+
+    .main__account-title {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+
+    .main__money-text {
+        font-size: 20px;
+    }
+
+    .main__money-triangle {
+        left: -5%;
+        width: 280px;
+    }
+
+    .main__money-info {
+        padding: 0;
+    }
+
+    .main__money-title {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+
+    .main__crypto-text {
+        font-size: 20px;
+    }
+
+    .main__crypto-triangle {
+        left: -5%;
+        top: 40%;
+        width: 300px;
+    }
+
+    .main__crypto-info {
+        padding: 0;
+    }
+
+    .main__crypto-title {
+        margin-top: 10px;
+        font-size: 24px;
+    }
 }
